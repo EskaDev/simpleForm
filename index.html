@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test form</title>
+	<link rel="stylesheet" href="main.css/main.css">
+</head>
+
+<body>
+	<h1>Test form</h1>
+
+	<div class="container">
+		<form action="" method="GET">
+
+			<!--fieldset 1-->
+			<fieldset class="personality">
+				<legend>Personality</legend>
+				<div>
+					<label for="firstName">First name: </label>
+					<input type="text" name="firstName" id="firstName" placeholder="Your name">
+				</div>
+				<div>
+					<label for="lastName">Second name:</label>
+					<input type="text" name="lastName" id="lastName" placeholder="Your surname">
+				</div>
+				<div>
+					<label for="pass">Your password: </label>
+					<input type="password" name="pass" id="pass">
+				</div>
+				<div>
+					<label for="email">Email: </label>
+					<input type="email" name="email" id="email" placeholder="olegpavlivwebdev@gmail.com">
+				</div>
+				<div>
+					<label for="phone">Phone: </label>
+					<input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="093-23-421">
+				</div>
+			</fieldset>
+
+			<!--fieldset 2-->
+			<fieldset class="quiz">
+				<legend>Some questions</legend>
+				<div>
+					<p>Your gender:</p>
+
+					<input type="radio" name="gender" value="male" id="male">
+					<label for="male">Male: </label>
+					<input type="radio" name="gender" value="female" id="female">
+					<label for="female">Female: </label>
+				</div>
+				<div>
+					<p>Choose your favorite auto or autos: </p>
+					<label for="audi">Audi: </label>
+					<input type="checkbox" name="audi" id="audi">
+					<label for="bmw">BMW: </label>
+					<input type="checkbox" name="bmw" id="bmw">
+					<label for="opel">Opel: </label>
+					<input type="checkbox" name="opel" id="opel">
+					<label for="volvo">Volvo: </label>
+					<input type="checkbox" name="volvo" id="volvo">
+				</div>
+				<div>
+					<p>Select your favorite browser: </p>
+					<select name="browser" id="browser">
+						<option value="IE">Ineternet Exploer</option>
+						<option value="opera">Opera</option>
+						<option value="googleChrome" selected>Google Chrome</option>
+						<option value="safari">Safari</option>
+					</select>
+				</div>
+				<div>
+					<p>How old are you? </p>
+					<label for="age">Your age:</label>
+					<input type="number" min="1" max="100" name="age" id="age">
+				</div>
+				<input type="submit" value="Submit">
+			</fieldset>
+			<div class="test clearfix"></div>
+		</form>
+	</div>
+</body>
+
+</html>

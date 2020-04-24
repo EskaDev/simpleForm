@@ -1,0 +1,45 @@
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color:#000;
+	color: aqua;
+	font: 17px "Arial" , sans-serif;
+}
+.clearfix::after , .clearfix::before{
+	content: "";
+	display: block;
+	clear: both;
+}
+h1{
+	color: brown;
+	text-align: center;
+}
+
+.container{
+	padding: 10px 10px;
+	border: 2px solid red;
+}
+.personality{
+	float: left;
+	width: 50%;
+}
+.quiz{
+	float: right;
+	width: 50%;
+}
+fieldset{
+	padding: 15px 15px;
+	border: none;
+}
+.quiz{
+	text-align: center;
+}
+input{
+	margin: 10px;
+	padding: 5px 5px 5px 10px;
+}
